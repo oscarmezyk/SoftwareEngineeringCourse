@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Records</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <nav>
+        <a href="add.html">Add Record</a>
+        <a href="display.html">Display Records</a>
+        <a href="query.html">Search Records</a>
+		<a href="scrap.html">Scrap Records</a>
+    </nav>
+    <h1>Search Records</h1>
+    <form action="/query" method="get">
+        <label for="artist">Artist or title:</label>
+        <input type="text" id="artist" name="artist">
+        <input type="submit" value="Search">
+    </form>
+    <div id="search-results">
+        <!-- Search results will be displayed here -->
+    </div>
+</body>
+</html>

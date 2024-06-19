@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scrap Playlist</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <nav>
+        <a href="add.html">Add Record</a>
+        <a href="display.html">Display Records</a>
+        <a href="query.html">Search Records</a>
+        <a href="scrap.html">Scrap Records</a>
+    </nav>
+    <h1>Select range:</h1>
+    <form action="/scrap" method="post">
+        <label for="day">Day (Monday, Tuesday...):</label>
+        <input type="text" id="day" name="day"><br>
+        
+        <label for="start_date">Start date (YYYYMMDD):</label>
+        <input type="text" id="start_date" name="start_date"><br>
+        
+        <label for="end_date">Emit Date (YYYYMMDD):</label>
+        <input type="text" id="end_date" name="end_date"><br>
+        
+        <label for="start_time">Emit Time (HH:MM):</label>
+        <input type="text" id="start_time" name="start_time"><br>
+        
+        <label for="end_time">Emit Time (HH:MM):</label>
+        <input type="text" id="end_time" name="end_time"><br>
+
+        <input type="submit" value="Scrap!" id="scrap">
+		<label for="save">Save directly to database and do not display:</label>
+		<input type="checkbox" id="save" name="save" value="true">
+    </form>
+</body>
+</html>
